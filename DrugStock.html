@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drug Stock</title>
+	
+	<style>
+		*{margin: 0; padding: 0;} 
+*{ text-decoration: none; }
+.clearfix { overflow: auto; }
+.wrapper {
+	margin: 0 auto;
+	width: 1200px;
+
+}
+.top-bar {
+	width: 1200px;
+	background: #003087 ;
+
+}
+.boder {
+	border:2px solid black;
+}
+.top-bar-links{
+	float: left;
+}
+.site-search {
+	float: right;
+}
+.top-bar-links ul {
+	margin: 15px;
+
+	list-style: none;
+
+}
+.top-bar-links ul li {
+	padding: 0px 10px;
+	border-right: 1px solid white;
+
+	display: inline-block;
+}
+.top-bar-links ul li:last-child {
+	border: none;
+}
+.top-bar-links ul li a {
+	color: white;
+}
+.top-bar-links ul li a:hover {
+	color: #8FB5C6;
+}
+.logout ul li a {
+	color: white;
+}
+.logout ul li a:hover {
+	color:#8FB5C6  ;
+}
+.logout {
+	float: right;
+}
+.logout ul {
+	margin: 15px;
+	list-style: none;
+}
+.logout ul li {
+	padding: 0px 10px;
+	display: inline-block;
+
+}
+.title {
+	margin-top: 50px;
+	margin-bottom: 50px;
+margin-left: 500px;
+}
+
+.site-search {
+	padding: 0px 10px;
+	margin: 15px;
+	float: right;
+	border-radius: 10px;
+
+}
+.site-search input{
+	border: 0;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+	float: left;
+}
+.site-search button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 0px;
+	height: 20px;
+	float: right;
+}
+.site-search button:hover {
+	background: #1E2B81;
+}
+.search-bar1 button:hover {
+	background: #1E2B81;
+}
+.search-bar2 button:hover {
+	background: #1E2B81;
+}
+.search-bar3 button:hover {
+	background: #1E2B81;
+}
+.search-bar1{
+	float: left;
+	margin-bottom: 30px;
+
+}
+.search-bar2 {
+	float: right;
+}
+.search-bar3 {
+	margin-left: 400px;
+}
+.search-bar1 input{
+	border: 1;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+
+}
+.search-bar1 button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 1px;
+	height: 20px;
+	
+}
+
+
+.search-bar2 input{
+	border: 1;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+
+}
+.search-bar2 button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 1px;
+	height: 20px;
+	
+}
+.search-bar3 input{
+	border: 1;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+
+}
+.search-bar3 button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 1px;
+	height: 20px;
+	
+}
+
+table{
+	margin: 0 auto;
+		width: 1200px;
+		margin-top: 10px;
+	margin-bottom: 20px;
+	
+	}
+	
+	td{
+		width: 1200px;
+		
+		text-align:left;
+		background: #809fff;
+		
+	}
+	
+		
+	
+	th{
+		color: white;
+		background:#005EB8 ;
+		padding: 15px;
+	}
+	.table,td,th:hover {
+  opacity: 95%;
+}
+  .table,th:hover {
+  opacity: 85%;
+}
+.left-button {
+	margin-top: 100px; 
+	float: left;
+
+}
+.right-button {
+	margin-top: 100px;
+	float: right;
+}
+.left-button ul {
+	list-style: none;
+	margin-right: 20px;
+}
+.right-button ul {
+	list-style: none;
+
+}
+.right-button button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 5px;
+	border-radius: 10px;
+	border: 0px;
+	height: 40px;
+	width: 70px;
+	float: right;
+}
+.left-button button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 5px;
+	border-radius: 10px;
+	border: 0px;
+	height: 40px;
+	width: 70px;
+	float: right;
+	margin-right: 20px;
+}
+.left-button button:hover {
+	background: #1E2B81;
+}
+.right-button button:hover {
+	background: #1E2B81;
+}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="top-bar clearfix">
+		<div class="top-bar-links">
+			<ul>
+				<li><a href="#">Drug Stock</a></li>
+				<li><a href="#">Pharmacist Registration</a></li>
+				<li><a href="#">Delivert Person Registration</a></li>
+				<li><a href="#">Customer Details</a></li>
+				<li><a href="#">Seller Registration</a></li>
+			
+				
+			</ul>
+		</div><!--top-bar-links-->
+		<div class="logout">
+			<ul>
+				<li><a href="#">Log Out</a></li>
+			</ul>
+		</div><!--logout-->
+				<div class="site-search">
+			<form  method="get" action="index.html">
+				<input type="text" placeholder="search">
+				<button type="submit">search</button>
+			</form>
+			
+		</div><!--site-search-->
+	</div><!--top-bar-->
+	<div class = "boder">
+		
+	
+	<div class="title">
+		<h1>Drug Stock</h1>
+		
+	</div>
+	
+		<div class="search-bar1">
+			
+		
+		<form action="index_submit" method="get" accept-charset="utf-8">
+			<input type="text" placeholder="Drug Name">
+			<button type="submit">search</button>
+		</form>
+
+			
+		</div><!--search-bar1-->
+		<div class="search-bar2">
+			
+		
+		<form action="index_submit" method="get" accept-charset="utf-8">
+			<input type="text" placeholder="Generic Name">
+			<button type="submit">search</button>
+		</form>
+		</div><!--search-bar2-->
+
+		<div class="search-bar3">
+			
+		
+		<form action="index_submit" method="get" accept-charset="utf-8">
+			<input type="text" placeholder="Drug Code">
+			<button type="submit">search</button>
+		</form>
+		
+	</div><!--search-bar3-->
+
+<table width="100%">
+	<tr>
+			<th>Select</th>
+			<th>Generic Name</th>
+			<th>Drug Name</th>
+			<th>Drug Code</th>
+			<th>Dose</th>
+			<th>QTY</th>
+			<th>Expire Date</th>
+			<th>Price</th>
+			
+
+	</tr>
+
+	</table>
+	<div class="button">
+		<div class="left-button">
+			
+		
+		<ul>
+			<li><button type="submit">Add</button>
+				<button type="submit">Update</button>
+				<button type="submit">Delete</button>
+			</li>
+		</ul>
+		</div><!--Left-button-->
+		<div class="right-button">
+			<ul>
+				<li>
+					<button type="sumbit">Save</button>
+				</li>
+			</ul>
+			
+		</div>
+	</div><!--button-->
+
+</div><!--wrapper-->
+</div><!--boder-->
+</body>
+</html>
