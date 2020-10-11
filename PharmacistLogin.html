@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharmacist Registration</title>
+
+	<style>
+		*{margin: 0; padding: 0;} 
+*{ text-decoration: none; }
+.clearfix { overflow: auto; }
+.wrapper {
+	margin: 0 auto;
+	width: 1200px;
+	
+
+}
+header {
+	margin: 0 auto;
+	width: 1200px;
+	background: linear-gradient(#7FB5F1,white);
+}
+.top-bar {
+	width: 1200px;
+	background: #003087 ;
+
+}
+.top-bar-links{
+	float: left;
+}
+.site-search {
+	float: right;
+}
+.top-bar-links ul {
+	margin: 15px;
+
+	list-style: none;
+
+}
+.top-bar-links ul li {
+	padding: 0px 10px;
+	border-right: 1px solid white;
+
+	display: inline-block;
+}
+.top-bar-links ul li:last-child {
+	border: none;
+}
+.top-bar-links ul li a {
+	color: white;
+}
+.top-bar-links ul li a:hover {
+	color: #8FB5C6;
+}
+.logout ul li a {
+	color: white;
+}
+.logout ul li a:hover {
+	color:#8FB5C6  ;
+}
+.logout {
+	float: right;
+}
+.logout ul {
+	margin: 15px;
+	list-style: none;
+}
+.logout ul li {
+	padding: 0px 10px;
+	display: inline-block;
+
+}
+.site-search {
+	padding: 0px 10px;
+	margin: 15px;
+	float: right;
+	border-radius: 10px;
+
+}
+.site-search input{
+	border: 0;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+	float: left;
+}
+.site-search button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 0px;
+	height: 20px;
+	float: right;
+}
+.site-search button:hover {
+	background: #1E2B81;
+}
+.table {
+
+	background-color: #AED6F1 ;
+	width: 600px;
+	height: 700px;
+	float: left;
+	border: 1px solid black;
+
+}
+table{
+	border: 1px solid black;
+	margin: 0 auto;
+		width: 600px;
+		margin-top: 10px;
+	margin-bottom: 20px;
+	
+	}
+	
+	td{
+		width: 600px;
+		
+		text-align:left;
+		background: #809fff;
+		
+	}
+	
+		
+	
+	th{
+		color: white;
+		background:#005EB8 ;
+		padding: 15px;
+	}
+	.table,td,th:hover {
+  opacity: 95%;
+}
+  .table,th:hover {
+  opacity: 85%;
+}
+.table-search {
+	padding: 0px 10px;
+	margin: 15px;
+	float: right;
+	
+	height: 20px;
+	border-radius: 10px;
+
+}
+.table-search input{
+	border: 0;
+	padding: 0 10px;
+	border-radius: 10px;
+	height: 20px;
+	
+	float: left;
+}
+.table-search button {
+	background: #5261C1 ;
+	color: white;
+	padding: 0px 10px;
+	border-radius: 10px;
+	border: 0px;
+	height: 20px;
+	float: right;
+}
+.table-search button:hover {
+	background: #1E2B81;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  height: 700px;
+  background-color: white;
+  border: 1px solid black;
+  background-image: url("https://chicagohealthonline.com/wp-content/uploads/2020/03/AdobeStock_274131656-1170x700.png");
+
+}
+
+/* Full-width input fields */
+.container input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.container input[type=text]:focus, input[type=number]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.container:hover {
+  opacity: 90%;
+}
+
+/* Overwrite default styles of hr */
+
+/* Set a style for the submit button */
+.container button {
+  background-color: #367BA8;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.container button:hover {
+	background:  #1E2B81;
+		}
+
+/* Add a blue text color to links */
+
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.sellerform {
+	width: 600px;
+	float: right;
+	
+}
+textarea {
+	width: 100%;
+	padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+	</style>
+</head>
+<body>
+<header>
+	<img src="OO.jpg" alt="Girl in a jacket" width="200" height="100">
+</header><!-- /header -->
+<div class="wrapper">
+	
+	<div class="top-bar clearfix">
+		<div class="top-bar-links">
+			<ul>
+				<li><a href="#">Drug Stock</a></li>
+				<li><a href="#">Pharmacist Registration</a></li>
+				<li><a href="#">Delivert Person Registration</a></li>
+				<li><a href="#">Customer Details</a></li>
+				<li><a href="#">Seller Registration</a></li>
+			
+				
+			</ul>
+		</div><!--top-bar-links-->
+		<div class="logout">
+			<ul>
+				<li><a href="#">Log Out</a></li>
+			</ul>
+		</div><!--logout-->
+				<div class="site-search">
+			<form  method="get" action="SellerReg.html">
+				<input type="text" placeholder="search">
+				<button type="submit">search</button>
+			</form>
+			
+		</div><!--site-search-->
+	</div><!--tip-bar-->
+	<div class ="table">
+		<div class="table-search">
+			<form  method="get" action="SellerReg.html">
+				<input type="text" placeholder="search">
+				<button type="submit">search</button>
+			</form>
+		</div><!--table-search-->
+		
+		<table width="50%">
+	<tr>
+			<th>Name</th>
+			<th>Number</th>
+			
+			
+
+	</tr>
+
+	</table>
+		
+	</div><!--table-->
+	<div class = "sellerform">
+		<form action="/action_page.php">
+  <div class="container">
+  
+    <hr>
+
+    <label for="name"><b>Full Name</b></label>
+    <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+
+    <label for="Address"><b>Address</b></label>
+    <input type="text" placeholder="Enter your address" name="Address" id="Address" required>
+
+    <label for="number"><b>Contact Number</b></label>
+    <input type="number" placeholder="Enter your contact number" name="number" id="number" required>
+
+    <label for="NIC"><b>NIC</b></label>
+    <input type="number" placeholder="Enter Full Name" name="name" id="name" required>
+<label for="number"><b>Reg No</b></label>
+    <input type="number" placeholder="Enter Full Name" name="name" id="name" required>
+
+    <label for="text"><b>Product</b></label>
+    <textarea name="product" placeholder="product"></textarea>
+    <hr>
+    
+
+    <button type="submit" class="registerbtn">Add</button>
+      <button type="submit" class="registerbtn">Update</button>
+        <button type="submit" class="registerbtn">Delete</button>
+          <button type="submit" class="registerbtn">Save</button>
+  </div>
+  
+  
+</form>
+
+	</div>
+	
+	</div><!--wrapper-->
+</body>
+</html>
